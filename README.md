@@ -86,3 +86,18 @@ The report utilizes explicit DAX measures to ensure high dynamic performance acr
 
 ## 📂 Repository Structure
 ![Blinkit Operations & Sales Analytics](Repository_Structure.png)
+
+---
+
+## 🚀 How to Open & Run This Project
+
+1. Download and install **[Power BI Desktop](https://powerbi.microsoft.com/desktop/)** (Free).
+2. Clone this repository:
+   ```bash
+   git clone [https://github.com/hemanth2662777/Blinkit-Operations-Sales-Analytics.git](https://github.com/hemanth2662777/Blinkit-Operations-Sales-Analytics.git)
+
+
+👤 Author
+  C Hemanth
+
+GitHub: @hemanth2662777
