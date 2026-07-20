@@ -52,4 +52,4 @@ Quick-commerce platforms operate in high-velocity environments where delivery ti
 ---
 
 ## 🏗️ Data Architecture & Pipeline
-![Blinkit Operations & Sales Analytics](Data%20Architecture.png)
+![Blinkit Operations & Sales Analytics](Data_Architecture.png)
