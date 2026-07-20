@@ -53,3 +53,35 @@ Quick-commerce platforms operate in high-velocity environments where delivery ti
 
 ## 🏗️ Data Architecture & Pipeline
 ![Blinkit Operations & Sales Analytics](Data_Architecture.png)
+
+1. **Data Cleaning & Transformation (Power Query):**
+   * Promoted headers and verified correct data types across numeric and temporal attributes.
+   * Handled missing/null values across text fields (`Brand` and `Customer Segment`).
+   * Created custom date keys to build time-series aggregation paths.
+2. **Data Modeling (Star Schema Layout):**
+   * Modeled fact tables containing transactional and marketing spend records alongside dimension tables for regional hubs, categories, and date parameters.
+
+---
+
+## 🧮 DAX Calculations & Formulas Used
+
+The report utilizes explicit DAX measures to ensure high dynamic performance across user slicers:
+
+* **Total Revenue:**
+  $$\text{Total Revenue} = \text{SUM}(\text{Sales}[\text{Total Price}])$$
+* **Average Order Value (AOV):**
+  $$\text{AOV} = \text{DIVIDE}(\text{SUM}(\text{Sales}[\text{Total Price}]), \text{DISTINCTCOUNT}(\text{Sales}[\text{Order ID}]), 0)$$
+* **On-Time Delivery %:**
+  $$\text{On-Time Delivery \%} = \text{DIVIDE}(\text{CALCULATE}(\text{COUNT}(\text{Orders}[\text{Order ID}]), \text{Orders}[\text{Delivery Status}] = \text{"On-Time"}), \text{COUNT}(\text{Orders}[\text{Order ID}]), 0)$$
+
+---
+
+## 💡 Strategic Business Recommendations
+
+1. **Optimize Hub Fulfillment:** Focus route optimization and dark-store packing teams on top-performing cities like **Nagercoil** and **Parbhani** to close the 14.33% delivery SLA deficit.
+2. **Cross-Sell Essentials:** Capitalize on top-performing items (**Bread** & **Eggs**) by bundling them with lower-performing categories (**Instant & Frozen Food**) via smart cart recommendations.
+3. **Reallocate Marketing Budget:** Evaluate Social Media efficiency ($0.11M spend) versus Email ($0.28M) to align ad spend with customer acquisition rates.
+
+---
+
+## 📂 Repository Structure
