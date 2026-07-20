@@ -60,6 +60,7 @@ Quick-commerce businesses operate on thin margins and time-critical delivery exp
 
 ## 📂 Repository Structure
 ├── Blinkit_Analytics.pbix       # Power BI Dashboard File
+|
 ├── Blinkit_Dataset.csv          # Source Data File
 ├── dashboard_preview.png        # High-Resolution Dashboard Screenshot
 └── README.md                    # Project Documentation
