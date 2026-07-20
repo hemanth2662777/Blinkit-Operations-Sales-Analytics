@@ -85,3 +85,4 @@ The report utilizes explicit DAX measures to ensure high dynamic performance acr
 ---
 
 ## 📂 Repository Structure
+![Blinkit Operations & Sales Analytics](Repository_Structure.png)
