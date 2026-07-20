@@ -1,66 +1,54 @@
 # 🛒 Blinkit Operations & Sales Analytics Dashboard
 
-An end-to-end, interactive **Power BI Data Analytics Project** examining sales efficiency, operational delivery SLAs, customer sentiment, and marketing channel ROI for Blinkit.
+An enterprise-level **Power BI Data Analytics Project** designed to analyze quick-commerce operations, delivery SLA efficiency, customer satisfaction metrics, and marketing budget allocation for **Blinkit**.
 
 ---
 
-## 📊 Executive Dashboard Overview
+## 📊 Executive Dashboard Preview
 
-![Blinkit Operations & Sales Analytics]
+![Blinkit Operations & Sales Analytics](dashboard_preview.png)
 
-> 💡 **Interactive Access:** To test filters, slicers, and cross-highlighting, download the `Blinkit_Analytics.pbix` file from this repository and open it using **Power BI Desktop** (Free).
-
----
-
-## 🎯 Business Problem & Objective
-
-Quick-commerce businesses operate on thin margins and time-critical delivery expectations. This dashboard was created to give executives and operations teams a single-screen view of performance to answer key operational questions:
-
-* **Revenue Performance:** How are sales trending daily, and which product categories yield the highest pricing power?
-* **Fulfillment SLAs:** Are customer orders being delivered on time according to target benchmarks?
-* **Marketing Efficiency:** Which acquisition and engagement channels (SMS, App, Email, Social) offer the highest ROI?
-* **Regional Hubs:** Which cities lead regional revenue, and where are operational bottlenecks occurring?
+> 💡 **Interactive Exploration:** To interact with slicers, filters, and cross-highlighting, download `Blinkit_Analytics.pbix` from this repository and open it using **Power BI Desktop** (Free).
 
 ---
 
-## 📈 Key Performance Indicators (KPIs)
+## 📋 Executive Summary & Key Performance Indicators (KPIs)
 
-* **Total Revenue:** `$876.99K`
-* **Total Orders Processed:** `150`
-* **Total Customer Count:** `150`
-* **Average Order Value (AOV):** `$5.85K`
-* **On-Time Delivery Success Rate:** `70.67%` *(Target: 85.00%)*
-* **Total Marketing Spend:** `$435.59K`
-* **Average Customer Rating:** `3.37 / 5.0`
+Quick-commerce platforms operate in high-velocity environments where delivery timelines directly impact customer retention. This dashboard consolidates operational and commercial metrics onto a single pane of glass:
 
----
-
-## 🔍 Core Insights & Data Takeaways
-
-### 🚚 Operational Bottleneck
-* **SLA Gap:** On-Time Delivery is currently at **70.67%**, missing the enterprise target of **85%**. Route optimization and warehouse packing speeds require targeted intervention.
-
-### 📦 Product & Category Trends
-* **Revenue Drivers:** **Dairy & Breakfast** and **Fruits & Vegetables** lead overall volume, while top individual products by revenue include **Bread ($4,558.09)**, **Eggs ($3,836.99)**, and **Cola ($3,830.84)**.
-
-### 📢 Channel Spend Analysis
-* **Channel Distribution:** **Email** represents the largest single marketing budget allocation ($0.28M), followed by **Mobile App push notifications** ($0.25M) and **SMS marketing** ($0.24M).
+| Metric Category | Key Metric | Value | Target / Benchmark | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **Commercials** | Total Revenue | **$876.99K** | $800.00K | 🟢 Exceeding |
+| **Commercials** | Total Orders | **150** | — | ⚪ Baseline |
+| **Commercials** | Average Order Value (AOV) | **$5.85K** | $5.00K | 🟢 Exceeding |
+| **Operations** | On-Time Delivery Rate | **70.67%** | **85.00%** | 🔴 Critical Gap |
+| **Customer Experience**| Avg Customer Rating | **3.37 / 5.0** | 4.20 / 5.0 | 🟡 Needs Improvement |
+| **Marketing** | Total Marketing Spend | **$435.59K** | — | ⚪ Baseline |
 
 ---
 
-## 🛠️ Tech Stack & Skills Demonstrated
+## 🔍 In-Depth Data & Business Analysis
 
-* **Business Intelligence:** Power BI Desktop
-* **Data Modeling:** Star Schema / Relational Modeling
-* **Data Transformation:** Power Query (Data cleaning, type casting, filtering)
-* **Calculations & Logic:** DAX (`CALCULATE`, `SUM`, `AVERAGE`, `DIVIDE`)
-* **UI/UX Design:** Dark/Light contrast layout, custom card containers, color-coded conditional gauges.
+### 1. 🚚 Operations & Delivery SLA Performance
+* **The Problem:** The current **On-Time Delivery Rate is 70.67%**, missing the corporate target of **85.00%** by **14.33%**.
+* **Operational Impact:** Low delivery speeds strongly correlate with the average customer rating of **3.37 / 5.0**. The rating distribution reveals **11 one-star ratings** and **19 two-star ratings**, pointing directly to late order arrivals and fulfillment center latency.
+
+### 2. 📦 Product Category & Top Revenue Drivers
+* **Category Breakdown:** **Dairy & Breakfast ($17.1K)** and **Fruits & Vegetables ($14.8K)** dominate sales volume, proving that daily essentials are the main driver for order volume.
+* **Top Individual Products:**
+  1. **Bread:** `$4,558.09`
+  2. **Eggs:** `$3,836.99`
+  3. **Cola:** `$3,830.84`
+  4. **Biscuits:** `$3,666.20`
+  5. **Onions:** `$3,465.00`
+
+### 3. 📢 Marketing Channel Budget & Efficiency
+* **Channel Distribution:** Total marketing spend across channels stands at **$435.59K**.
+  * **Email Marketing:** `$0.28M` (Largest budget allocation)
+  * **Mobile App Engagement:** `$0.25M`
+  * **SMS Campaigns:** `$0.24M`
+  * **Social Media Ads:** `$0.11M`
 
 ---
 
-## 📂 Repository Structure
-├── Blinkit_Analytics.pbix       # Power BI Dashboard File
-|
-├── Blinkit_Dataset.csv          # Source Data File
-├── dashboard_preview.png        # High-Resolution Dashboard Screenshot
-└── README.md                    # Project Documentation
+## 🏗️ Data Architecture & Pipeline
